@@ -1,0 +1,25 @@
+{
+  "name": "radarproxy",
+  "version": "1.0.0",
+  "description": "OpenMRS Radar Data Proxy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openmrs/openmrs-contrib-radarproxy.git"
+  },
+  "author": "",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/openmrs/openmrs-contrib-radarproxy/issues"
+  },
+  "homepage": "https://github.com/openmrs/openmrs-contrib-radarproxy#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-rate-limit": "^6.3.0",
+    "googleapis": "^95.0.0"
+  }
+}

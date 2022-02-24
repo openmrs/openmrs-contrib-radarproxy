@@ -1,0 +1,4 @@
+.credentials.json
+credentials.json // don't commit in case someone forgets the leading dot
+.env
+node_modules/
