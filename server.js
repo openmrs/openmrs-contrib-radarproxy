@@ -56,6 +56,11 @@ async function getData() {
     });
 }
 
+// Return 200 OK with empty result at root (can be used as healthcheck)
+app.get('/', (req, res) => {
+  res.status(200).send('');
+});
+
 // Publish data at /openmrs%20radar.json (radar expect .json extension)
 app.get('/openmrs%20radar.json', (req, res) => {
   getData()
@@ -73,7 +78,7 @@ app.get('/openmrs%20radar.json', (req, res) => {
         .set('Access-Control-Allow-Origin', '*')
         .send(JSON.stringify({ error: err.message }))
     );
-})
+});
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}...`);
